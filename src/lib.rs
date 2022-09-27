@@ -37,7 +37,7 @@ pub fn split_binary_string_into_framents_of_5_bits(binary_string: &str) -> Vec<S
     word_binary.iter().map(|&s| s.to_string()).collect()
 }
 
-fn convert_binary_to_int(binary_string: &str) -> isize {
+pub fn convert_binary_to_int(binary_string: &str) -> isize {
     let bin_idx = binary_string;
     let intval = isize::from_str_radix(bin_idx, 2).unwrap();
     intval
